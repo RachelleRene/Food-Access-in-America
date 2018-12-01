@@ -1,0 +1,27 @@
+#contact {
+    display: grid;
+    grid-template-rows: [title-s] 5rem [title-e inputs-s] 1fr [inputs-e];
+
+    font-size: 62.5%;
+}
+
+#contact-title {
+    grid-row: title-s/title-e;
+
+    border-bottom: .1rem solid black;
+}
+
+#contact-input {
+    grid-row: inputs-s/inputs-e;
+
+    display: grid;
+    grid-template-columns: [labels-s] 1fr [labels-e inputs-s] 1fr [inputs-e];
+}
+
+.contact-input__label {
+    grid-column: labels-s/labels-e;
+}
+
+.contact-input__input {
+    grid-column: inputs-s/inputs-e;
+}
