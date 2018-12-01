@@ -1,27 +1,70 @@
-#contact {
-    display: grid;
-    grid-template-rows: [title-s] 5rem [title-e inputs-s] 1fr [inputs-e];
-
+html {
+    margin: 0;
+    padding: 0;
     font-size: 62.5%;
 }
 
-#contact-title {
+#contact {
+    display: grid;
+    grid-template-rows:  [title-s] 5rem [title-e inputs-s] 1fr [inputs-e];
+    grid-template-columns: [s] 16rem [m-s] 1fr [m-e] 16rem [e];
+    align-items: center;   
+    justify-items: center;
+    grid-row-gap: 3rem;
+
+    margin-top: 2rem;
+}
+
+#contact__title {
     grid-row: title-s/title-e;
+    grid-column: m-s/m-e;
 
     border-bottom: .1rem solid black;
+    display: inline-block;
+    font-size: 3rem;
+    width: 50%;
+    font-weight: 600;
 }
 
 #contact-input {
     grid-row: inputs-s/inputs-e;
+    grid-column: m-s/m-e;
 
     display: grid;
     grid-template-columns: [labels-s] 1fr [labels-e inputs-s] 1fr [inputs-e];
+
+
+    width: 50%;
 }
 
 .contact-input__label {
     grid-column: labels-s/labels-e;
+
+    width: 5rem;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .contact-input__input {
     grid-column: inputs-s/inputs-e;
+    justify-self: start;
+
+    width: 30rem;
+    padding: 1rem;
+}
+
+#contact-input__subject-input {
+    margin-bottom: 1rem;
+}
+
+#contact-input__body-input {
+    height: 20rem;
+}
+
+#submit {
+    grid-column: 1/-1;
+    justify-self: center;
+
+    width: 10rem;
+    margin-top: 1rem;
 }
