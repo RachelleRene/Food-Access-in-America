@@ -40,7 +40,8 @@ nav a {
   color: #726E75;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  padding: 1rem;
+  font-size: 2.2rem;
+  padding: 2rem;
   border-right: 0px solid #726E75;
 }
 nav a:hover {
@@ -50,12 +51,13 @@ nav a:hover {
   padding: 2em;
   background-color: #DDE0BD;
   overflow: hidden;
-  width: 100%;
+  width: 96%;
 }
 article h2,
 aside h3 {
   margin: 0;
   color: #2A282B;
+    font-family: 'Pacifico', cursive;
 }
 
 h2 {
@@ -69,15 +71,23 @@ h4 {
 }
 p {
   font-size: 2em;
+  margin-bottom: 1rem;
+}
+li {
+    font-size: 2rem;
 }
 article {
   float: left;
   width: 70%;
 }
 
+h1, h2, h3, h4, h5, h6, p, li, ul {
+  font-family: 'Montserrat', sans-serif;
+}
 article p {
   margin-right: 2rem;
 }
+
 .facts {
 float: right;
 background-color: #DDE0BD;
@@ -90,8 +100,8 @@ border-left: 0px solid #B6A39E;
 }
 
 .body-content {
-  padding: 1rem;
-  maring: 1rem;
+  padding: 2rem;
+/*  margin: 1rem;*/
   background-color: white;
   color: #2A282B;
   min-height: 400px;
@@ -99,10 +109,31 @@ border-left: 0px solid #B6A39E;
 }
 
 .side-content {
-  padding: 1rem;
-  maring: 1rem;
+  padding: 2rem;
   background-color: white;
   color: #2A282B;
   min-height: 400px;
-  margin-right: 1em;
+  margin-left: 1rem;
 }
+.fade {
+   opacity: 1;
+   transition: opacity .9s ease-in-out;
+   -moz-transition: opacity .9s ease-in-out;
+   -webkit-transition: opacity .9s ease-in-out;
+
+   }
+   .center {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   .center-text {
+     text-align: center;
+   }
+   .fade:hover {
+      opacity: 0.5;
+      }
+    img {
+      width: 100%;
+      height: auto;
+    }
