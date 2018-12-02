@@ -8,20 +8,20 @@ html {
     display: grid;
     grid-template-rows:  [title-s] 5rem [title-e inputs-s] 1fr [inputs-e];
     grid-template-columns: [s] 16rem [m-s] 1fr [m-e] 16rem [e];
-    align-items: center;   
+    align-items: center;
     justify-items: center;
     grid-row-gap: 3rem;
-
     margin-top: 2rem;
 }
 
 #contact__title {
     grid-row: title-s/title-e;
     grid-column: m-s/m-e;
-
-    border-bottom: .1rem solid black;
+    font-family: 'Pacifico', cursive;
+      text-align: center;
+    border-bottom: 0rem solid black;
     display: inline-block;
-    font-size: 3rem;
+    font-size: 4rem;
     width: 50%;
     font-weight: 600;
 }
@@ -32,22 +32,24 @@ html {
 
     display: grid;
     grid-template-columns: [labels-s] 1fr [labels-e inputs-s] 1fr [inputs-e];
-
+  font-family: 'Montserrat', sans-serif;
 
     width: 50%;
 }
 
 .contact-input__label {
     grid-column: labels-s/labels-e;
-
+    text-align: right;
     width: 5rem;
     font-size: 2rem;
     font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .contact-input__input {
     grid-column: inputs-s/inputs-e;
     justify-self: start;
+      font-family: 'Montserrat', sans-serif;
 
     width: 30rem;
     padding: 1rem;
@@ -67,4 +69,23 @@ html {
 
     width: 10rem;
     margin-top: 1rem;
+}
+#submit {
+  background-color: #726E75; /* Lavender */
+    border: none;
+    color: #e0e0e0;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.contact-content {
+  padding: 2rem;
+  background-color: white;
+  color: #2A282B;
+  min-height: 400px;
+  margin-right: 0em;
 }

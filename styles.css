@@ -12,10 +12,11 @@ header h1 {
 }
 
 h1 {
-  color: #DDE0BD;
+  color: #e0e0e0;
   font-size: 5rem;
 }
 /*colors:
+New light grey: #e0e0e0
 light grey: #DDE0BD
 LIght greenish grey: #D0D1AC
 Muted Lavender: #B6A39E
@@ -32,11 +33,12 @@ nav ul {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 nav li {
   list-style-type: none;
-  float: left;
+  display:inline;
 }
 nav a {
   display: inline-block;
@@ -49,11 +51,11 @@ nav a {
   border-right: 0px solid #726E75;
 }
 nav a:hover {
-  background-color: #D0D1AC;
+  background-color: #e0e0e0;
 }
 #main_content {
   padding: 2em;
-  background-color: #DDE0BD;
+  background-color: #e0e0e0;
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
@@ -95,7 +97,7 @@ article p {
 
 .facts {
 float: right;
-background-color: #DDE0BD;
+background-color: #e0e0e0;
 margin: -1rem;
 padding: 1rem;
 width: 200px;
@@ -107,7 +109,6 @@ word-wrap: break-word;
 
 .body-content {
   padding: 2rem;
-/*  margin: 1rem;*/
   background-color: white;
   color: #2A282B;
   min-height: 400px;
