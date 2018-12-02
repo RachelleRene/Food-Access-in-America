@@ -1,6 +1,11 @@
 html {
   font-size: 62.5%;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 header {
   background-color: #726E75;
   padding: 1em;
@@ -51,7 +56,7 @@ nav a:hover {
   padding: 2em;
   background-color: #DDE0BD;
   overflow: hidden;
-  width: 96%;
+  /* width: 96%; */
 }
 article h2,
 aside h3 {
@@ -91,32 +96,30 @@ article p {
 .facts {
 float: right;
 background-color: #DDE0BD;
-margin: -1rem;
-padding: 1rem;
-width: 200px;
+margin-right: -1rem;
 min-height: 400px;
 width: 30%;
-border-left: 0px solid #B6A39E;
 }
 
 .body-content {
   padding: 1rem;
-  margin: 1rem;
-
   background-color: white;
   color: #2A282B;
   min-height: 400px;
-  margin-right: 0em;
 }
 
 .side-content {
   padding: 1rem;
-  margin: 1rem;
   background-color: white;
   color: #2A282B;
   min-height: 400px;
-  margin-left: 1rem;
+  
 }
+
+.side-content ul {  
+  list-style-type: none;
+}
+
 .fade {
    opacity: 1;
    transition: opacity .9s ease-in-out;
@@ -135,7 +138,7 @@ border-left: 0px solid #B6A39E;
    .fade:hover {
       opacity: 0.5;
       }
-    img {
+    .fade img {
       width: 100%;
       height: auto;
     }

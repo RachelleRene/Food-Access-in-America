@@ -1,4 +1,56 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+#about {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#about__title {
+    font-size: 3rem;
+    font-weight: 600;
+    border-bottom: .2rem solid #DDE0BD;
+    margin: 2rem auto;
+}
+
+#about__summary {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#about__contributors {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#about__contributors__title {
+    font-size: 2rem;
+    margin-top: 4rem;
+    border-bottom: .2rem solid #DDE0BD;
+    color: #DDE0BD;
+}
+
+.contributor {
+    display: inline-block;
+    font-size: .8rem;
+    margin: 3rem auto 0;
+    width: 49%;
+}
+
+.contributor__pic {
+    float: left;
+    width: 8rem;
+    margin-right: .5rem;
+    border-radius: 50%;
+}
+
+.contributor__bio {
+    float: right;
+    width: 80%;
+    padding: 0 1rem 0 0;
 }

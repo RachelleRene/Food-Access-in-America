@@ -31,7 +31,6 @@
 
     display: grid;
     grid-template-columns: [labels-s] 1fr [labels-e inputs-s] 1fr [inputs-e];
-    grid-template-rows: ;
 
     width: 50%;
 }
