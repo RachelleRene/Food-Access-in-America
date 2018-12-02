@@ -1,7 +1,6 @@
-html {
+* {
     margin: 0;
     padding: 0;
-    font-size: 62.5%;
 }
 
 #contact {
@@ -32,7 +31,10 @@ html {
 
     display: grid;
     grid-template-columns: [labels-s] 1fr [labels-e inputs-s] 1fr [inputs-e];
+<<<<<<< HEAD
   font-family: 'Montserrat', sans-serif;
+=======
+>>>>>>> c939fda3d50d6470fbb2f1402cda336da62ca669
 
     width: 50%;
 }
@@ -64,10 +66,9 @@ html {
 }
 
 #submit {
-    grid-column: 1/-1;
-    justify-self: center;
+    grid-column: input-s/inputs-e;
+    grid-row: 2/-1;
 
-    width: 10rem;
     margin-top: 1rem;
 }
 #submit {
