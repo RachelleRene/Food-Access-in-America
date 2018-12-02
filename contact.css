@@ -4,43 +4,28 @@
 }
 
 #contact {
-    display: grid;
-    grid-template-rows:  [title-s] 5rem [title-e inputs-s] 1fr [inputs-e];
-    grid-template-columns: [s] 16rem [m-s] 1fr [m-e] 16rem [e];
     align-items: center;
     justify-items: center;
-    grid-row-gap: 3rem;
     margin-top: 2rem;
 }
 
 #contact__title {
-    grid-row: title-s/title-e;
-    grid-column: m-s/m-e;
+
     font-family: 'Pacifico', cursive;
       text-align: center;
     border-bottom: 0rem solid black;
     display: inline-block;
     font-size: 4rem;
-    width: 50%;
     font-weight: 600;
 }
 
 #contact-input {
-    grid-row: inputs-s/inputs-e;
-    grid-column: m-s/m-e;
 
-    display: grid;
-    grid-template-columns: [labels-s] 1fr [labels-e inputs-s] 1fr [inputs-e];
-<<<<<<< HEAD
   font-family: 'Montserrat', sans-serif;
-=======
->>>>>>> c939fda3d50d6470fbb2f1402cda336da62ca669
-
-    width: 50%;
 }
 
 .contact-input__label {
-    grid-column: labels-s/labels-e;
+
     text-align: right;
     width: 5rem;
     font-size: 2rem;
@@ -49,7 +34,7 @@
 }
 
 .contact-input__input {
-    grid-column: inputs-s/inputs-e;
+
     justify-self: start;
       font-family: 'Montserrat', sans-serif;
 
@@ -66,13 +51,10 @@
 }
 
 #submit {
-    grid-column: input-s/inputs-e;
-    grid-row: 2/-1;
-
-    margin-top: 1rem;
+        margin-top: 1rem;
 }
 #submit {
-  background-color: #726E75; /* Lavender */
+  background-color: #726E75;
     border: none;
     color: #e0e0e0;
     font-weight: bold;
@@ -89,4 +71,61 @@
   color: #2A282B;
   min-height: 400px;
   margin-right: 0em;
+  overflow: hidden;
 }
+/* Column Classes
+    Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
+--------------------------------------------- */
+
+.five-sixths,
+.four-sixths,
+.one-fourth,
+.one-half,
+.one-sixth,
+.one-third,
+.three-fourths,
+.three-sixths,
+.two-fourths,
+.two-sixths,
+.two-thirds {
+	float: left;
+	margin-left: 2.564102564102564%;
+}
+
+.one-half,
+.three-sixths,
+.two-fourths {
+	width: 48.717948717948715%;
+}
+
+.one-third,
+.two-sixths {
+	width: 31.623931623931625%;
+}
+
+.four-sixths,
+.two-thirds {
+	width: 65.81196581196582%;
+}
+
+.one-fourth {
+	width: 23.076923076923077%;
+}
+
+.three-fourths {
+	width: 74.35897435897436%;
+}
+
+.one-sixth {
+	width: 14.52991452991453%;
+}
+
+.five-sixths {
+	width: 82.90598290598291%;
+}
+.full {
+  width: 100%;
+}
+
+.first {
+	clear: both;
